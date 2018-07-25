@@ -1,7 +1,7 @@
 import serial
 from time import sleep
 
-arduinoData = serial.Serial('COM3', 9600, timeout=5)
+arduinoData = serial.Serial('/dev/ttyS2', 9600, timeout=5)
 
 def ledOn():
 	arduinoData.write(b'1')
